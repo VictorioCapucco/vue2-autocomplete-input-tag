@@ -3,7 +3,8 @@
 ## vue2-autocomplete-input-tag
 ```
 With this library you can search items in an array and select the desired value through an input. 
-This library works with vue 2. If you need this to vue 3, please visit this library: https://www.npmjs.com/package/vue-autocomplete-input-tag
+This library works with vue 2. If you use vue 3, you can use my another library exclusive to this
+version:: https://www.npmjs.com/package/vue-autocomplete-input-tag
 
 npm install vue2-autocomplete-input-tag
 ```
