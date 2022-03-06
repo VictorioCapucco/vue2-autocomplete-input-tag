@@ -71,12 +71,34 @@ You can pass attributes to input, like disabled and class
      <autocomplete 
         v-model="test" 
         :items="items" 
-        :permitArbitraryValues="true" 
+        permitArbitraryValues
         :returned="['id', 'name']" 
         displayed="name"
      />
   </div>
 </template>
+<script>
+  import autocomplete from 'vue-autocomplete-input-tag'
+  
+  export default {
+    components: {
+      autocomplete,
+    },
+    data() {
+      return {
+        test: {},
+        items: [
+          { name: "Banana", id: 1, color: "Yellow" },
+          { name: "Strawberry", id: 2, color: "Red" },
+          { name: "Orange", id: 3, color: "Orange" },
+          { name: "Lemon", id: 4, color: "Green" },
+          { name: "Pineapple", id: 5, color: "Yellow" },
+          { name: "Watermelon", id: 6, color: "Red" },
+          { name: "Melon", id: 7, color: "Yellow" },
+        ],
+      }
+     }
+</script>
 ```
 <ul>
 <li><h4>permitArbitraryValues:</h4> If the user does not select some option and the input lose focus, this prop permit the digited value. It's a Boolean prop, and the default value is false.</li>
