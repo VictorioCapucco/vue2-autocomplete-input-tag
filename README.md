@@ -71,12 +71,34 @@ You can pass attributes to input, like disabled and class
      <autocomplete 
         v-model="test" 
         :items="items" 
-        :permitArbitraryValues="true" 
+        permitArbitraryValues
         :returned="['id', 'name']" 
         displayed="name"
      />
   </div>
 </template>
+<script>
+  import autocomplete from 'vue-autocomplete-input-tag'
+  
+  export default {
+    components: {
+      autocomplete,
+    },
+    data() {
+      return {
+        test: {},
+        items: [
+          { name: "Banana", id: 1, color: "Yellow" },
+          { name: "Strawberry", id: 2, color: "Red" },
+          { name: "Orange", id: 3, color: "Orange" },
+          { name: "Lemon", id: 4, color: "Green" },
+          { name: "Pineapple", id: 5, color: "Yellow" },
+          { name: "Watermelon", id: 6, color: "Red" },
+          { name: "Melon", id: 7, color: "Yellow" },
+        ],
+      }
+     }
+</script>
 ```
 <ul>
 <li><h4>permitArbitraryValues:</h4> If the user does not select some option and the input lose focus, this prop permit the digited value. It's a Boolean prop, and the default value is false.</li>
@@ -101,7 +123,7 @@ A single example:
     box-sizing: border-box;
     font-size: 14px;
   }
-  .vue-autocomplete-input-tag-items {
+  .vue2-autocomplete-input-tag-items {
     border: 1px solid #ccc;
     max-height: 200px;
     margin-top: 8px;
@@ -110,7 +132,7 @@ A single example:
     border-radius: 8px;
     overflow: auto;
   }
-  .vue-autocomplete-input-tag-item {
+  .vue2-autocomplete-input-tag-item {
     padding: 6px 16px;
     color: #4a4a4a;
     max-width: 100%;
@@ -118,7 +140,7 @@ A single example:
     text-align: left;
     font-size: 14px;
   }
-  .vue-autocomplete-input-tag-item:hover {
+  .vue2-autocomplete-input-tag-item:hover {
     background-color: #e8e8e8;
   }
 ```

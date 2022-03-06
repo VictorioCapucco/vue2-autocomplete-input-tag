@@ -112,7 +112,7 @@
             }
           } else this.updateVModel({ typed: this.typed });
         } else {
-          if (this.typed != value) {
+          if (value != this.value) {
             this.typed = value;
             this.updateVModel(value);
           }
