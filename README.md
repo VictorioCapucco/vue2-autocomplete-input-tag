@@ -101,7 +101,7 @@ A single example:
     box-sizing: border-box;
     font-size: 14px;
   }
-  .vue-autocomplete-input-tag-items {
+  .vue2-autocomplete-input-tag-items {
     border: 1px solid #ccc;
     max-height: 200px;
     margin-top: 8px;
@@ -110,7 +110,7 @@ A single example:
     border-radius: 8px;
     overflow: auto;
   }
-  .vue-autocomplete-input-tag-item {
+  .vue2-autocomplete-input-tag-item {
     padding: 6px 16px;
     color: #4a4a4a;
     max-width: 100%;
@@ -118,7 +118,7 @@ A single example:
     text-align: left;
     font-size: 14px;
   }
-  .vue-autocomplete-input-tag-item:hover {
+  .vue2-autocomplete-input-tag-item:hover {
     background-color: #e8e8e8;
   }
 ```
