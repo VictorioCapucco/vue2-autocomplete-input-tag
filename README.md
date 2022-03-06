@@ -78,7 +78,7 @@ You can pass attributes to input, like disabled and class
   </div>
 </template>
 <script>
-  import autocomplete from 'vue-autocomplete-input-tag'
+  import autocomplete from 'vue2-autocomplete-input-tag'
   
   export default {
     components: {
