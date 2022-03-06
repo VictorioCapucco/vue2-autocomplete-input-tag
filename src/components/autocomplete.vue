@@ -11,14 +11,14 @@
       @blur="closeItems"
     />
     <div
-      class="vue-autocomplete-input-tag-items"
+      class="vue2-autocomplete-input-tag-items"
       :style="`display: ${openItems ? 'grid' : 'none'};`"
     >
       <!-- Use @mousedown because @click occurs after @blur and make bugs -->
       <div
         v-for="(item, index) in filteredItems"
         :key="index"
-        class="vue-autocomplete-input-tag-item"
+        class="vue2-autocomplete-input-tag-item"
         @mousedown="updateInput(item, true)"
       >
         {{ displayed != null ? item[displayed] : item }}
