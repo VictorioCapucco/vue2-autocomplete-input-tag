@@ -52,7 +52,6 @@
       returned: {
         default: null,
       },
-      modelValue: {},
       value: {},
     },
     data() {
@@ -89,8 +88,7 @@
           this.returned === null
         ) {
           if (
-            this.items.find((element) => this.modelValue === element) ===
-            undefined
+            this.items.find((element) => this.value === element) === undefined
           )
             this.updateInput("", false);
         }
@@ -114,8 +112,10 @@
             }
           } else this.updateVModel({ typed: this.typed });
         } else {
-          this.updateVModel(value);
-          this.typed = value;
+          if (this.typed != value) {
+            this.typed = value;
+            this.updateVModel(value);
+          }
         }
       },
     },
